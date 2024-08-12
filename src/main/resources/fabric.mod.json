@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "betterchromakey",
+	"version": "${version}",
+	"name": "Better Chroma Key",
+	"description": "Useful Chroma key blocks for creators!",
+	"authors": [
+		"Craemon"
+	],
+	"contact": {
+		"homepage": "https://craemon.com/",
+		"sources": "https://github.com/Craemon"
+	},
+	"license": "ARR",
+	"icon": "assets/betterchromakey/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.craemon.betterchromakey.BetterChromaKey"
+		],
+		"fabric-datagen": [
+			"com.craemon.betterchromakey.BetterChromaKeyDataGenerator"
+		],
+		"client": [
+			"com.craemon.betterchromakey.BetterChromaKeyClient"
+		]
+	},
+	"mixins": [
+		"betterchromakey.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
