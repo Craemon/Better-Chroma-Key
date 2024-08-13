@@ -1,0 +1,8 @@
+{
+  "itemgroup.betterchromakey": "Better Chroma Key",
+
+  "block.betterchromakey.green_chroma_block": "Green Chroma Block",
+  "block.betterchromakey.blue_chroma_block": "Blue Chroma Block",
+
+  "item.betterchromakey.testitem": "Test Item"
+}

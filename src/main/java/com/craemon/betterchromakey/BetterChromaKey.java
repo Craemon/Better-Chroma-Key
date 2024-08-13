@@ -1,5 +1,8 @@
 package com.craemon.betterchromakey;
 
+import com.craemon.betterchromakey.block.ModBlocks;
+import com.craemon.betterchromakey.item.ModItemGroups;
+import com.craemon.betterchromakey.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -11,5 +14,8 @@ public class BetterChromaKey implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItemGroups.registerItemGroups();
+		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
