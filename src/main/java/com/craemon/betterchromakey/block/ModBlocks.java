@@ -15,10 +15,14 @@ public class ModBlocks {
     public static final Block GREEN_CHROMA_BLOCK = registerBlock("green_chroma_block", new Block(AbstractBlock.Settings.create()));
     public static final Block BLUE_CHROMA_BLOCK = registerBlock("blue_chroma_block", new Block(AbstractBlock.Settings.create()));
     public static final Block RED_CHROMA_BLOCK = registerBlock("red_chroma_block", new Block(AbstractBlock.Settings.create()));
+    public static final Block BLACK_CHROMA_BLOCK = registerBlock("black_chroma_block", new Block(AbstractBlock.Settings.create()));
+    public static final Block WHITE_CHROMA_BLOCK = registerBlock("white_chroma_block", new Block(AbstractBlock.Settings.create()));
     //Chroma Lamp Blocks
     public static final Block GREEN_CHROMA_LAMP = registerBlock("green_chroma_lamp", new Block(AbstractBlock.Settings.create().luminance(value -> 15)));
     public static final Block BLUE_CHROMA_LAMP = registerBlock("blue_chroma_lamp", new Block(AbstractBlock.Settings.create().luminance(value -> 15)));
     public static final Block RED_CHROMA_LAMP = registerBlock("red_chroma_lamp", new Block(AbstractBlock.Settings.create().luminance(value -> 15)));
+    public static final Block BLACK_CHROMA_LAMP = registerBlock("black_chroma_lamp", new Block(AbstractBlock.Settings.create().luminance(value -> 15)));
+    public static final Block WHITE_CHROMA_LAMP = registerBlock("white_chroma_lamp", new Block(AbstractBlock.Settings.create().luminance(value -> 15)));
 
     //block register stuff
     private static Block registerBlock(String name, Block block) {

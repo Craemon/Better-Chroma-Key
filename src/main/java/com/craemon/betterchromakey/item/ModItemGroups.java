@@ -15,15 +15,21 @@ public class ModItemGroups {
             Identifier.of(BetterChromaKey.MOD_ID, "betterchromakey"),
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.betterchromakey"))
                     .icon(() -> new ItemStack(ModBlocks.GREEN_CHROMA_BLOCK)).entries((displayContext, entries) -> {
-                        entries.add(ModItems.Testitem);
-                        //Chroma Blocks
+                        //Green Blocks
                         entries.add(ModBlocks.GREEN_CHROMA_BLOCK);
-                        entries.add(ModBlocks.BLUE_CHROMA_BLOCK);
-                        entries.add(ModBlocks.RED_CHROMA_BLOCK);
-                        //Chroma Lamp Blocks
                         entries.add(ModBlocks.GREEN_CHROMA_LAMP);
+                        //Blue Blocks
+                        entries.add(ModBlocks.BLUE_CHROMA_BLOCK);
                         entries.add(ModBlocks.BLUE_CHROMA_LAMP);
+                        //Red Blocks
+                        entries.add(ModBlocks.RED_CHROMA_BLOCK);
                         entries.add(ModBlocks.RED_CHROMA_LAMP);
+                        //Black Blocks
+                        entries.add(ModBlocks.BLACK_CHROMA_BLOCK);
+                        entries.add(ModBlocks.BLACK_CHROMA_LAMP);
+                        //White Blocks
+                        entries.add(ModBlocks.WHITE_CHROMA_BLOCK);
+                        entries.add(ModBlocks.WHITE_CHROMA_LAMP);
                     }).build());
 
     public static void registerItemGroups() {
