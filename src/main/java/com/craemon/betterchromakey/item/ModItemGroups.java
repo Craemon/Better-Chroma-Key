@@ -30,6 +30,15 @@ public class ModItemGroups {
                         //White Blocks
                         entries.add(ModBlocks.WHITE_CHROMA_BLOCK);
                         entries.add(ModBlocks.WHITE_CHROMA_LAMP);
+                        //Yellow Blocks
+                        entries.add(ModBlocks.YELLOW_CHROMA_BLOCK);
+                        entries.add(ModBlocks.YELLOW_CHROMA_LAMP);
+                        //Light Blue Blocks
+                        entries.add(ModBlocks.LIGHT_BLUE_CHROMA_BLOCK);
+                        entries.add(ModBlocks.LIGHT_BLUE_CHROMA_LAMP);
+                        //Magenta Blocks
+                        entries.add(ModBlocks.MAGENTA_CHROMA_BLOCK);
+                        entries.add(ModBlocks.MAGENTA_CHROMA_LAMP);
                     }).build());
 
     public static void registerItemGroups() {

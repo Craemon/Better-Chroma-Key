@@ -6,12 +6,18 @@
   "block.betterchromakey.red_chroma_block": "Red Chroma Block",
   "block.betterchromakey.black_chroma_block": "Black Chroma Block",
   "block.betterchromakey.white_chroma_block": "White Chroma Block",
+  "block.betterchromakey.yellow_chroma_block": "Yellow Chroma Block",
+  "block.betterchromakey.light_blue_chroma_block": "Light Blue Chroma Block",
+  "block.betterchromakey.magenta_chroma_block": "Magenta Chroma Block",
 
   "block.betterchromakey.green_chroma_lamp": "Green Chroma Lamp",
   "block.betterchromakey.blue_chroma_lamp": "Blue Chroma Lamp",
   "block.betterchromakey.red_chroma_lamp": "Red Chroma Lamp",
   "block.betterchromakey.black_chroma_lamp": "Black Chroma Lamp",
   "block.betterchromakey.white_chroma_lamp": "White Chroma Lamp",
+  "block.betterchromakey.yellow_chroma_lamp": "Yellow Chroma Lamp",
+  "block.betterchromakey.light_blue_chroma_lamp": "Light Blue Chroma Lamp",
+  "block.betterchromakey.magenta_chroma_lamp": "Magenta Chroma Lamp",
 
   "item.betterchromakey.testitem": "Test Item"
 }
