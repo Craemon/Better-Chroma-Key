@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "betterchromakey:block/replace_me_block"
+    }
+  }
+}

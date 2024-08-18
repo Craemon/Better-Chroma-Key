@@ -39,6 +39,9 @@ public class ModItemGroups {
                         //Magenta Blocks
                         entries.add(ModBlocks.MAGENTA_CHROMA_BLOCK);
                         entries.add(ModBlocks.MAGENTA_CHROMA_LAMP);
+                        //Replace Me Blocks
+                        entries.add(ModBlocks.REPLACE_ME_BLOCK);
+                        entries.add(ModBlocks.REPLACE_ME_LAMP);
                     }).build());
 
     public static void registerItemGroups() {
