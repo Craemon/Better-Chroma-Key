@@ -1,21 +1,21 @@
 package com.craemon.betterchromakey.datagen;
 
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
-import net.minecraft.client.data.ItemModelGenerator;
-import net.minecraft.client.data.BlockStateModelGenerator;
+import net.fabricmc.fabric.api.datagen.v1.FabricPackOutput;
+import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.BlockModelGenerators;
 
 public class ModModelProvider extends FabricModelProvider {
-    public ModModelProvider(FabricDataOutput output) {
+    public ModModelProvider(FabricPackOutput output) {
         super(output);
     }
 
     @Override
-    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+    public void generateBlockStateModels(BlockModelGenerators blockStateModelGenerator) {
     }
 
     @Override
-    public void generateItemModels(ItemModelGenerator itemModelGenerator) {
+    public void generateItemModels(ItemModelGenerators itemModelGenerator) {
 
     }
 }

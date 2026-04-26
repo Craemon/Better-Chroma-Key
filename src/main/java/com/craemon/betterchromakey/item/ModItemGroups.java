@@ -2,46 +2,46 @@ package com.craemon.betterchromakey.item;
 
 import com.craemon.betterchromakey.BetterChromaKey;
 import com.craemon.betterchromakey.block.ModBlocks;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.text.Text;
-import net.minecraft.util.Identifier;
+import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.core.Registry;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
 
 public class ModItemGroups {
-    public static final ItemGroup BetterChromaKey_Group = Registry.register(Registries.ITEM_GROUP,
-            Identifier.of(BetterChromaKey.MOD_ID, "betterchromakey"),
-            FabricItemGroup.builder().displayName(Text.translatable("itemgroup.betterchromakey"))
-                    .icon(() -> new ItemStack(ModBlocks.GREEN_CHROMA_BLOCK)).entries((displayContext, entries) -> {
+    public static final CreativeModeTab BetterChromaKey_Group = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
+            Identifier.fromNamespaceAndPath(BetterChromaKey.MOD_ID, "betterchromakey"),
+            FabricCreativeModeTab.builder().title(Component.translatable("itemgroup.betterchromakey"))
+                    .icon(() -> new ItemStack(ModBlocks.GREEN_CHROMA_BLOCK)).displayItems((displayContext, entries) -> {
                         //Green Blocks
-                        entries.add(ModBlocks.GREEN_CHROMA_BLOCK);
-                        entries.add(ModBlocks.GREEN_CHROMA_LAMP);
+                        entries.accept(ModBlocks.GREEN_CHROMA_BLOCK);
+                        entries.accept(ModBlocks.GREEN_CHROMA_LAMP);
                         //Blue Blocks
-                        entries.add(ModBlocks.BLUE_CHROMA_BLOCK);
-                        entries.add(ModBlocks.BLUE_CHROMA_LAMP);
+                        entries.accept(ModBlocks.BLUE_CHROMA_BLOCK);
+                        entries.accept(ModBlocks.BLUE_CHROMA_LAMP);
                         //Red Blocks
-                        entries.add(ModBlocks.RED_CHROMA_BLOCK);
-                        entries.add(ModBlocks.RED_CHROMA_LAMP);
+                        entries.accept(ModBlocks.RED_CHROMA_BLOCK);
+                        entries.accept(ModBlocks.RED_CHROMA_LAMP);
                         //Black Blocks
-                        entries.add(ModBlocks.BLACK_CHROMA_BLOCK);
-                        entries.add(ModBlocks.BLACK_CHROMA_LAMP);
+                        entries.accept(ModBlocks.BLACK_CHROMA_BLOCK);
+                        entries.accept(ModBlocks.BLACK_CHROMA_LAMP);
                         //White Blocks
-                        entries.add(ModBlocks.WHITE_CHROMA_BLOCK);
-                        entries.add(ModBlocks.WHITE_CHROMA_LAMP);
+                        entries.accept(ModBlocks.WHITE_CHROMA_BLOCK);
+                        entries.accept(ModBlocks.WHITE_CHROMA_LAMP);
                         //Yellow Blocks
-                        entries.add(ModBlocks.YELLOW_CHROMA_BLOCK);
-                        entries.add(ModBlocks.YELLOW_CHROMA_LAMP);
+                        entries.accept(ModBlocks.YELLOW_CHROMA_BLOCK);
+                        entries.accept(ModBlocks.YELLOW_CHROMA_LAMP);
                         //Light Blue Blocks
-                        entries.add(ModBlocks.LIGHT_BLUE_CHROMA_BLOCK);
-                        entries.add(ModBlocks.LIGHT_BLUE_CHROMA_LAMP);
+                        entries.accept(ModBlocks.LIGHT_BLUE_CHROMA_BLOCK);
+                        entries.accept(ModBlocks.LIGHT_BLUE_CHROMA_LAMP);
                         //Magenta Blocks
-                        entries.add(ModBlocks.MAGENTA_CHROMA_BLOCK);
-                        entries.add(ModBlocks.MAGENTA_CHROMA_LAMP);
+                        entries.accept(ModBlocks.MAGENTA_CHROMA_BLOCK);
+                        entries.accept(ModBlocks.MAGENTA_CHROMA_LAMP);
                         //Replace Me Blocks
-                        entries.add(ModBlocks.REPLACE_ME_BLOCK);
-                        entries.add(ModBlocks.REPLACE_ME_LAMP);
+                        entries.accept(ModBlocks.REPLACE_ME_BLOCK);
+                        entries.accept(ModBlocks.REPLACE_ME_LAMP);
                     }).build());
 
     public static void registerItemGroups() {
