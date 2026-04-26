@@ -2,7 +2,7 @@ package com.craemon.betterchromakey.item;
 
 import com.craemon.betterchromakey.BetterChromaKey;
 import com.craemon.betterchromakey.block.ModBlocks;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.creativetab.v1.FabricCreativeModeTab;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.core.registries.BuiltInRegistries;
@@ -13,7 +13,7 @@ import net.minecraft.resources.Identifier;
 public class ModItemGroups {
     public static final CreativeModeTab BetterChromaKey_Group = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB,
             Identifier.fromNamespaceAndPath(BetterChromaKey.MOD_ID, "betterchromakey"),
-            FabricItemGroup.builder().title(Component.translatable("itemgroup.betterchromakey"))
+            FabricCreativeModeTab.builder().title(Component.translatable("itemgroup.betterchromakey"))
                     .icon(() -> new ItemStack(ModBlocks.GREEN_CHROMA_BLOCK)).displayItems((displayContext, entries) -> {
                         //Green Blocks
                         entries.accept(ModBlocks.GREEN_CHROMA_BLOCK);
